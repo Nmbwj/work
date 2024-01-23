@@ -16,3 +16,6 @@ console.log(`${mudo["bulaus"]}`);
 console.log(`${"toString" in kudo}`);
 console.log(`${"toString" in mudo}`);
 
+console.log(`from kudo: ${Object.keys(kudo)} and from mudo: ${Object.keys(mudo)}`);
+console.log(`has property ${kudo.hasOwnProperty("toString")} and ${kudo.hasOwnProperty("bulaus")} `);
+// console.log(`error generating ${mudo.hasOwnProperty("toString")});
