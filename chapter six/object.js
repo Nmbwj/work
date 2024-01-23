@@ -13,3 +13,6 @@ let mudo = Object.create(null);
 mudo.bulaus=535;
 console.log(`${kudo["bulaus"]}`);
 console.log(`${mudo["bulaus"]}`);
+console.log(`${"toString" in kudo}`);
+console.log(`${"toString" in mudo}`);
+
