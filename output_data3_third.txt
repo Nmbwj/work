@@ -1,0 +1,5 @@
+command: sed 'N ; s/System\nAdministrator/Desktop User/' data3.txt
+On Tuesday, the linux Desktop User's group meeting will be held.
+All System Administrators should attend.
+Thank you for your attendance.
+
