@@ -1,3 +1,10 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -5,9 +12,20 @@ h1{
     padding-bottom: 6px;
 
 }
+h1::first-letter{
+    font-size: 5rem;
+}
+
 
 p {
     color: red;
+    background-color: black;
+
+
+}
+p:nth-of-type(odd){
+    color: blueviolet;
+    background-color: white;
 
 }
 p:first-of-type{
