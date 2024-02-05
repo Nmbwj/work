@@ -10,8 +10,10 @@ int main()
 	int type;
 	double op2;
 	char s[MAXOP];
+	/* this program now is bug fixed. So from now on we cann't access private variable of other code
 	extern int sp;
 	printf("this is demo %d\n",sp);
+	*/
 	while((type= getop(s)) != EOF)
 	{
 		switch (type)
