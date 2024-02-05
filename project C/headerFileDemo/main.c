@@ -10,7 +10,8 @@ int main()
 	int type;
 	double op2;
 	char s[MAXOP];
-
+	extern int sp;
+	printf("this is demo %d\n",sp);
 	while((type= getop(s)) != EOF)
 	{
 		switch (type)
