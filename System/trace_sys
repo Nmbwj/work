@@ -1,0 +1,44 @@
+[   0] read(0, "am tracing sys program which is "..., 8192) = 139
+[   1] write(1, "am tracing sys program which is "..., 139) = 139
+[   0] read(0,  <detached ...>
+[   0] read(0, "io program of stdin and stdout\n", 8192) = 31
+[   1] write(1, "io program of stdin and stdout\n", 31) = 31
+[   0] read(0, "which means am debugging the\n", 8192) = 29
+[   1] write(1, "which means am debugging the\n", 29) = 29
+[   0] read(0, "executable for system call\n", 8192) = 27
+[   1] write(1, "executable for system call\n", 27) = 27
+[   0] read(0, "and reverse engineering \n", 8192) = 25
+[   1] write(1, "and reverse engineering \n", 25) = 25
+[   0] read(0, "thank you! this is it\n", 8192) = 22
+[   1] write(1, "thank you! this is it\n", 22) = 22
+[   0] read(0,  <detached ...>
+[   0] read(0, "this is for stack trace\n", 8192) = 24
+ > /usr/lib/x86_64-linux-gnu/libc-2.31.so(__read+0xe) [0xeb3ce]
+ > /home/naol/work/work/project C/Unix/sys(main+0x40) [0x1185]
+ > /usr/lib/x86_64-linux-gnu/libc-2.31.so(__libc_start_main+0xea) [0x23d0a]
+ > /home/naol/work/work/project C/Unix/sys(_start+0x2a) [0x108a]
+[   1] write(1, "this is for stack trace\n", 24) = 24
+ > /usr/lib/x86_64-linux-gnu/libc-2.31.so(__write+0x13) [0xeb473]
+ > /home/naol/work/work/project C/Unix/sys(main+0x27) [0x116c]
+ > /usr/lib/x86_64-linux-gnu/libc-2.31.so(__libc_start_main+0xea) [0x23d0a]
+ > /home/naol/work/work/project C/Unix/sys(_start+0x2a) [0x108a]
+[   0] read(0,  <detached ...>
+     0.000000 [   0] read(0, "this is relative time\n", 8192) = 22
+    15.242833 [   1] write(1, "this is relative time\n", 22) = 22
+     0.000361 [   0] read(0, "between read and write\n", 8192) = 23
+     8.567539 [   1] write(1, "between read and write\n", 23) = 23
+     0.000364 [   0] read(0,  <detached ...>
+[   0] read(0, "tracing real time of\n", 8192) = 21 <22.024540>
+[   1] write(1, "tracing real time of\n", 21) = 21 <0.000116>
+[   0] read(0, "syscalls how much time\n", 8192) = 23 <15.247319>
+[   1] write(1, "syscalls how much time\n", 23) = 23 <0.000152>
+[   0] read(0,  <detached ...>
+[   0] read(0, "glory detial\n", 8192)  = 13
+[   1] write(1, "glory detial\n", 13)   = 13
+[   0] read(0,  <detached ...>
+[   0] read(0, "verbose print format\n", 8192) = 21
+[   1] write(1, "verbose print format\n", 21) = 21
+[   0] read(0,  <detached ...>
+[   0] read(0, "this is debug\n", 8192) = 14
+[   1] write(1, "this is debug\n", 14)  = 14
+[   0] read(0,  <detached ...>
