@@ -1,0 +1,2 @@
+find / -type d -name libc
+change -type d to f for regular file, b for block file.
