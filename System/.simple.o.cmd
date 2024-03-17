@@ -844,6 +844,9 @@ deps_/home/naol/work/work/System/simple.o := \
     $(wildcard include/config/HAVE_MOD_ARCH_SPECIFIC) \
     $(wildcard include/config/MODULES_USE_ELF_REL) \
     $(wildcard include/config/MODULES_USE_ELF_RELA) \
+  include/linux/hash.h \
+    $(wildcard include/config/HAVE_ARCH_HASH) \
+  include/linux/gcd.h \
 
 /home/naol/work/work/System/simple.o: $(deps_/home/naol/work/work/System/simple.o)
 
