@@ -7,7 +7,7 @@
 #include <linux/jiffies.h>
 
 /* This function is called when the module is loaded */
-long unsigned int jafis, second;
+long unsigned int jafis;
 int simple_init(void)
 {
 	printk(KERN_INFO "Loading Kernel Module Naol \n");
@@ -22,11 +22,9 @@ void simple_exit(void)
 {
 	printk(KERN_INFO "Removing Kernel Module Naol\n");
 	printk(KERN_INFO "gcd(3300, 24): %lu\n", gcd(3300,24));
-	jafis -= jiffies;
-	jafis *= -1;
-	second = jafis / HZ;
+	jafis = (jiffies-jafis)/HZ;
 	printk(KERN_INFO "number of inturrpt exit: %lu\n",jiffies);
-	printk(KERN_INFO "The number of seconds laps between init and exit of module: %lu\n",second);
+	printk(KERN_INFO "The number of seconds laps between init and exit of module: %lu\n",jafis);
 }
 
 /* Macros for registering module entery exit points. */
@@ -37,4 +35,5 @@ module_exit(simple_exit);
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Simple Module");
 MODULE_AUTHOR("Naol");
+
 
