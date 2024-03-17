@@ -1,0 +1,1 @@
+savedcmd_/home/naol/work/work/System/jiffies.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/naol/work/work/System/jiffies.ko /home/naol/work/work/System/jiffies.o /home/naol/work/work/System/jiffies.mod.o;  make -f ./arch/x86/Makefile.postlink /home/naol/work/work/System/jiffies.ko
