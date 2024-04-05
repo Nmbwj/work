@@ -1,0 +1,26 @@
+#manually adding module at boot time
+include the module name on /etc/modules file
+#manually blacklisting module for not to use it has side effect or error
+include the module name on /etc/modprobe.d/blacklist
+#automatically insert module is
+command: modprobe "module name"
+#to view the loaded module
+command: lsmode
+#to remove module
+command: rmmod "module name"
+#update the dependancy map for modprobe, if you download new module and included in file /etc/lib/modules.
+command: depmod
+#checking net troubleshoot: ping the domain name, check there DNS, check your Ip stack or you IP if it is reachable from other. check getway using ping and to find the IP of getway use ip route if it is listed.
+command:ping , ip add, ip route
+#DNS testing: cheking the dns for domain
+command: dig [@server] host(domain) #server is any server you want to query DNS for the host(domain name) you have provided. so server may be 8.8.8.8 GooglefreeDNS, or 1.1.1.1 Cloudflare, or 37.235.1.174 FreeDNS, or OpenDNS 208.67.222.222; those server give you the IP for domain name.
+
+command: nslookup host server, host host server
+
+# because at the begining our local DNS map is looked by our local DNS server, we should be carefull.
+#Local DNS server is by default 127.0.0.53(DNS) or 127.0.0.1(loopback)
+#the local DNS map is /etc/hosts, if you change there please restart NetworkManager
+command: systemctl restart NetworkManager
+#be carefull if the map is incorrectly mapped the we may encounter DNS failure due to it the place checked at first place.
+
+
