@@ -1114,4 +1114,4 @@ var SCRIPTS = [
   }
 ];
 
-
+module.exports = SCRIPTS 

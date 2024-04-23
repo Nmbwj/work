@@ -1,6 +1,6 @@
 
 /* import the Script module, to reduce space I intaintional removed it*/
-
+let SCRIPTS = require('./SCRIPT.js'); 
 
 function map(array, transform){
 	let mapped = [];

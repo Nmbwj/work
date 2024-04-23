@@ -1,5 +1,8 @@
 
 /* import the Script module, to reduce space I intaintional removed it*/
+let SCRIPTS = require('./SCRIPT.js'); 
+
+
 function characterScript(code){
 	for (script of SCRIPTS){
 		if(script.ranges.some(([from,to])=>{

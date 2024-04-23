@@ -1,6 +1,8 @@
 
 /* import the Script module, to reduce space I intaintional removed it*/
 
+let SCRIPTS = require('./SCRIPT.js'); 
+
 
 function reduce(array, combine, start){
 	let current = start;
