@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title><%= title %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/layout.css">
+</head>
+<body>
+<div id="interface">
+<form action="/fromdb" method="post">
+<p>
+<input type="text" name="message">
+<input type="submit" value="Submit">
+</p>
+</form>
+<hr>
+<ul>
+	<% rows.forEach( (row) => { %>
+	<li><strong><%= row.id %></strong>: <%= row.message %></li>
+	<% }) %>
+</ul>
+</div>
+</body>
+</html>
